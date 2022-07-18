@@ -1,0 +1,3 @@
+   <div><select size="4" onChange={(event) =>f1(event.target.value)}>
+                    {arrSelect.map((item,index) =><option key={index} value={item}>{item}</option>)}
+              </select></div>

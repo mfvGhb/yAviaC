@@ -1,0 +1,87 @@
+.App1 {
+  position:relative;  
+  left:25% ;
+}
+.heads{
+  width:99% ;
+  min-width: 995px;
+  height:310px;
+  padding:10px ; 
+  background-color : #042759 ;
+  border-radius: 7px ;
+}
+.appMapData{
+margin: 0 auto;
+width: 995px;   
+min-width: 995px;
+}
+
+.b1 {
+border: 1px solid grey ;
+padding: 5px;
+margin: 0 auto;
+}
+.card  {
+  border: 1px solid lightgray ;
+  border-top: 0px solid #f1f1f1ee ;  
+  margin-bottom:19px; 
+  padding: 0px;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 14%);
+  transition: box-shadow 300ms ease, transform 300ms ease;
+  border-radius: 10px 10px 5px 5px;
+}
+.headCard {
+   background-color:rgb(233 231 231 / 74%)  ;
+   padding:7px ;
+   border-radius:0px 10px 0px 0px;
+   margin:0px;
+}
+.cityPhoto {
+  margin: 0px;
+  display: inline-block; 
+  vertical-align:bottom;
+  width:50%;
+  height:300px;
+  border-radius: 5px 5px  5px 5px;
+  }
+
+  .card:hover {
+  transform: translateY(-2px);
+  box-shadow: 2px 8px 14px 2px rgb(0 0 0 / 10%);
+}
+
+.hov:hover {
+   color: black; 
+   cursor: pointer  ;
+   background-color:#dfe2e6 
+}
+
+.dropList {
+border-radius: 9px;
+margin-top: 0px;  
+background-color: white;
+padding:5px;
+width:420px ;
+border:solid 1px gray ;
+color:#54546E ;
+font-size:22px;   
+font-family:Arial, Helvetica, sans-serif;
+opacity: 1;
+}
+
+.activeI{
+  display:inline-block ;
+  width:400px ;
+  opacity:1 ; 
+  color:white;
+  font-size: 40px;
+  text-decoration: underline;
+}
+.noactiveI{
+  display:inline-block ;
+  width:400px ;
+  opacity:0.5 ; 
+  color:gray;
+  font-size: 20px;
+  text-decoration: none;
+}
