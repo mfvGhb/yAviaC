@@ -28,13 +28,16 @@ let  getArrDataRes= async ()=>{
      if (!paramCity || !objDepArr.dep_arr || arrSelect.length !==1  ) {alert(strParam+''+arrSelect.length) ; return ;}
 
      setArrComponents([AppWait()]) ;
-     let objData= await getFetchYa( strParam   ) ;
-     console.log('objData', objData);
-     if (objData) { 
-        let objData1={schedule:objData} ;
-        setArrComponents([<AppYandexSched {...objData1}/> , AppFooter({name:"End"})     ]) ;  
-        //setArrComponents([AppYandexSched(objData.schedule),AppFooter({name:"Конец"})]) ;
-     } 
+     let objData=[]; let objData1=[] ;
+     try {
+         objData= await getFetchYa( strParam   ) ;
+     }
+     catch(err) {alert(err + ' - try later') };
+     console.log('objData=', objData);
+  
+     objData1={schedule:objData} ;
+     setArrComponents([<AppYandexSched {...objData1}/> , AppFooter({name:"End"})     ]) ;  
+     //setArrComponents([AppYandexSched(objData.schedule),AppFooter({name:"Конец"})]) ;
 } //............................................end of getArrDataRes.......................
 //.............................. input ....................................................
 let vRenderChage1=()=>{ };

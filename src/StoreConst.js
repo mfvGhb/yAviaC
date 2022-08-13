@@ -20,6 +20,8 @@ objStrApi.flickr="https://www.flickr.com/services/rest/?method=flickr.photos.sea
 "format=json&nojsoncallback=1&content_type=1&media=photos&text=" ;
 
 objStrApi.cors="https://cors.eu.org/" ;
+
+
 objStrApi.AirLabs="https://airlabs.co/api/v9/schedules?api_key=449374fa-487f-4246-9359-395f326383c2&dep_iata=TLV";
 
 
