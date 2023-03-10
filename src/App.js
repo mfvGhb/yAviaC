@@ -63,7 +63,7 @@ let findCityArr=(strInputCity)=>{
 }} 
 //..........................................................input city list.....................
 let findCityArrApi= async (strInputCity)=>{
-let strFetchCityArr="https://autocomplete.travelpayouts.com/places2?locale=en&types[]=airport&types[]=city&term="+strInputCity ;    
+    
 if (strInputCity.length >2){
    let r=await fetch(strFetchCityArr);
    if (r.ok){
